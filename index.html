@@ -7,35 +7,105 @@
     <title>Vite App</title>
   </head>
   <body>
+
+    <!-- MENU BAR START -->
+
    <header class="absolute top-0 left-0 w-full h-[91px] flex items-center">
     <div class="container mx-auto">
-      <div class="flex">
-        <div class="w-1/2 flex justify-center items-center gap-8">
+      <div class="flex items-center">
+        <div class="w-1/2 flex justify-center items-center gap-11">
           <div>
           <h1 class="text-2xl font-bold">Brandname</h1>
           </div>
           <div>
             <nav>
-              <ul class="flex gap-3">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#"></a>Link 2</li>
-                <li><a href="#"></a>Link 3</li>
-                <li><a href="#"></a>Link 4</li>
-                <li><a href="#"></a>Link 5</li>
+              <ul class="flex gap-3 font-bold text-secondary ">
+                <li><a  href="#">Home</a></li>
+                <li><a href="#"></a>Product</li>
+                <li><a  href="#"></a>Pricing</li>
+                <li><a  href="#"></a>Contact</li>
               </ul>
             </nav>
           </div>
         </div>
 
-        <div class="w-1/2">
+       
 
+        <div class="w-1/2">
+          <div class="right">
+          <ul class="flex gap-10 ml-[190px] text-xs items-center">
+            <li><a href="#" class="text-primary font-bold">Login</a></li>
+            <li class="flex items-center"><a href="#" class="uppercase rounded text-white font-bold text-xs outline outline-1 outline-primary bg-primary px-6 py-2 flex items-center gap-2 hover:bg-background  hover:text-white">
+              <span>Join Us</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></a></li>
+          </ul>
+          </div>
         </div>
       </div>
     </div>
    </header>
+
+   <!-- MENU BAR END -->
+
     <main>
       <section class="bg-[url('/images/hero.png')] bg-cover h-dvh">
+       <div class=" mx-auto h-full flex items-center wrapper">
 
+        <!-- HERO CONTENT START -->
+
+          <div class="w-1/2 flex flex-col gap-10 -mt-12">
+            <h5 class="text-primary font-bold text-sm">For Better Future</h5>
+            <h1 class="uppercase font-bold text-4xl">HIGH QUALITY <br> COURSES</h1>
+            <p class="text-secondary w-1/2 -mt-4">Every day brings with it a fresh set of learning possibilities.</p>
+            <div>
+              <ul class="flex gap-4 text-xs items-center">
+                <li class="flex items-center"><a href="#" class="uppercase rounded text-white font-bold text-xs outline outline-1 bg-primary px-6 py-3 flex items-center gap-2 hover:bg-white hover:text-primary">
+                  <span>Get Quote Now</span>
+                  </a></li>
+                <li><a href="#" class="text-primary font-bold outline outline-1 px-7 py-3 rounded hover:bg-primary hover:text-white">Learn More</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <!-- HERO CONTENT END -->
+
+          
+       </div>
+   
+       <!-- SERVICES START -->
+        <div class="service-container flex justify-center -mt-12 gap-10">
+          <div class="service h-[328px] w-[300px] bg-white shadow-2xl rounded">
+           <div class="flex flex-col gap-7 ml-[25px] mt-[40px]"> 
+            <div class="w-[70px] h-[76px] bg-primary rounded-md mt-[20px] flex items-center justify-center"><img src="public/images/service/blackboards.png" alt=""></div>
+           <h2 class="text-emphasis font-bold text-2xl">Expert instruction</h2>
+           <div class="h-0.5 w-[70px] bg-primary"></div>
+           <p class="text-secondary">The gradual accumulation of 
+             information about atomic and 
+             small-scale behaviour...</p></div>
+          </div>
+
+          <div class="service h-[328px] w-[300px] bg-white shadow-2xl rounded">
+            <div class="flex flex-col gap-7 ml-[25px] mt-[40px]"> 
+             <div class="w-[70px] h-[76px] bg-primary rounded-md mt-[20px] flex items-center justify-center"><img src="public/images/service/telescope.png" alt=""></div>
+            <h2 class="text-emphasis font-bold text-2xl">Training Courses</h2>
+            <div class="h-0.5 w-[70px] bg-primary"></div>
+            <p class="text-secondary">The gradual accumulation of 
+              information about atomic and 
+              small-scale behaviour...</p></div>
+           </div>
+
+           <div class="service h-[328px] w-[300px] bg-white shadow-2xl rounded">
+            <div class="flex flex-col gap-7 ml-[25px] mt-[40px]"> 
+             <div class="w-[70px] h-[76px] bg-primary rounded-md mt-[20px] flex items-center justify-center"><img src="public/images/service/graduate.png" alt=""></div>
+            <h2 class="text-emphasis font-bold text-2xl">Lifetime access</h2>
+            <div class="h-0.5 w-[70px] bg-primary"></div>
+            <p class="text-secondary">The gradual accumulation of 
+              information about atomic and 
+              small-scale behaviour...</p></div>
+           </div>
+        </div>
+       <!-- SERVICES END -->
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
